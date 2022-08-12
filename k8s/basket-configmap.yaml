@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: basket-configmap
+data:
+  event_bus_setting: amqp://guest:guest@20.113.87.155:5672
+  cache_setting: amarredis.redis.cache.windows.net:6380,password=GszRxJzYyRab2GZapgokPkFhLoW1Xq04GAzCaCjOzzE=,ssl=True,abortConnect=False
+  grpc_setting: http://discount-grpc-service
+  

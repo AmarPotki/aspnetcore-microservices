@@ -3,15 +3,4 @@ kind: ConfigMap
 metadata:
   name: discount-postgres-configmap
 data:
-  connection_string: Server=discountdb;Port=5433;Database=DiscountDb;User Id=username;Password=password;
----
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: discount-postgres-secret
-  labels:
-    app: postgres
-data:
-  POSTGRES_DB: appdb
-  POSTGRES_USER: appuser
-  POSTGRES_PASSWORD: strongpasswordapp
+  connection_string: Server=amarpostgres.postgres.database.azure.com;Database=discountdb;Port=5432;User Id=ArashAdmin@amarpostgres;Password=aA123456;
